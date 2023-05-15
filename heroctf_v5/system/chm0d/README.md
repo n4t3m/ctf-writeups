@@ -1,5 +1,7 @@
 # chm0d
 
+![](2023-05-14-12-18-11.png)
+
 There is a file owned by `user`, `/flag.txt`. The current permission level set to the file is `000`.
 
 Usually you could simply use the chmod binary to add the read permission for the current user, but we do not have permission to use the binry.
