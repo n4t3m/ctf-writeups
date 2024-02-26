@@ -1,5 +1,7 @@
 # Locked Out
 
+![](2024-02-26-09-20-59.png)
+
 pwn, simple buffer overflow
 
 ```

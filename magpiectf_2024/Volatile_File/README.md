@@ -1,5 +1,7 @@
 # Volatile File
 
+![](2024-02-26-09-20-34.png)
+
 We're given a memory dump that appears to come from a Windows 10 machine. I'll use Volatility to extract information and files to DNS.
 
 I installed volatility3 and started analyzing the dump:
