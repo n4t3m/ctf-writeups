@@ -1,0 +1,37 @@
+lookups = '''504b03041400000008006bb029576cec2c391d.definitelynotadomain.net
+00000100304d614b0d9b0000740000004fd966.definitelynotadomain.net
+501bec0d0000611df01d1f00d9000018002f47.definitelynotadomain.net
+0000001b0000000d0000007265616c20666c61.definitelynotadomain.net
+0837000161006b4c00022e4400d900004b006c.definitelynotadomain.net
+0014006c00c800006c03726b014c4bf0000031.definitelynotadomain.net
+002cad0a0066ec00c8be0d29000014572c6120.definitelynotadomain.net
+672e747874cb4d4c2fc84cad4e314e2eaa2c30.definitelynotadomain.net
+74006c6172720066002c1d080061036c002f65.definitelynotadomain.net
+37cc338b37cf308e4fcb3131ab0500504b0102.definitelynotadomain.net
+1f001400000008006bb029576cec2c391d0000.definitelynotadomain.net
+1800004f4b001f006c00005700ad000000722e.definitelynotadomain.net
+7400cb00ec0100d21fb0002caad9574fcb006b.definitelynotadomain.net
+00392e4c000000617200e3399b31660600cc44.definitelynotadomain.net
+004bec78ec4b002000000d0000e35f2e000000.definitelynotadomain.net
+001b0000000d00240000000000000020000000.definitelynotadomain.net
+000074300000503300014b670d31aa0000e339.definitelynotadomain.net
+00000074010078004800006c0000045701332c.definitelynotadomain.net
+000000007265616c20666c61672e7478740a00.definitelynotadomain.net
+2000000000000100180061d244be9be3d90161.definitelynotadomain.net
+00ab001d00084d9b0000570500666b74000000.definitelynotadomain.net
+5f2900002e78d900e3500565be2c5700500166.definitelynotadomain.net
+d244be9be3d90147f0f3b69be3d901504b0506.definitelynotadomain.net
+0000660014001d004b0005be089b2f0000004c.definitelynotadomain.net
+00000000010001005f000000480000000000.definitelynotadomain.net'''
+
+lookup_arr = lookups.split("\n")
+
+indices_of_interest = "1, 4, 8, 10, 11, 16, 19, 20, 23, 25"
+index_arr = [int(x.strip()) for x in indices_of_interest.split(",")]
+
+out = ""
+
+for ind in index_arr:
+    out+=(lookup_arr[ind-1].split(".")[0].strip())
+
+print(out)
