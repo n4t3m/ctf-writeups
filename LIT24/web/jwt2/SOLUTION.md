@@ -1,0 +1,1 @@
+Looking at the code provided with the challenge, we see that there is a hardcoded secret key. Using this, we can easily create and sign our own cookie to get the flag.
